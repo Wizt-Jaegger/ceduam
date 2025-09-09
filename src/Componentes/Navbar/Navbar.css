@@ -1,0 +1,383 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+
+#userwayAccessibilityIcon {
+    background: rgba(0, 0, 0, 0.8) !important;
+    position: fixed !important;
+    top:60vh!important;
+    right: 0px!important;
+}
+.dark-panel-container {
+    box-shadow: none !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(34, 59, 122, 0.9); 
+    padding: 0px 0px; 
+    margin-top: 6px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav{
+    width: 100%;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn.dark-contactoBtn {
+    clip-path: none !important; 
+    font-size: 20px !important;
+    padding: 10px 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff !important; 
+    border-radius: 30px !important;
+    background: transparent !important; 
+    cursor: pointer !important;
+    border: 2px solid #4B66A8 !important;
+    outline: none !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn.dark-contactoBtn:hover {
+    background: #4B66A8 !important;
+    color: #fff !important;
+}
+
+
+.contactoBtn .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    background: rgb(34, 59, 122,0.9);
+    padding-top: 27px;
+    margin-right: -27px;
+    margin-top: -40px;
+    padding-bottom: 27px;
+    margin-bottom: -43px;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    transition: background 0.3s ease;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.contactoBtn .btn:hover {
+    background: rgba(122, 152, 201, 0.2);
+}
+nav ul li, nav ul li.active:hover{
+    font-family: Georgia;
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+nav ul li:hover,
+nav ul li.active {
+    color: rgba(122, 152, 201, 1);
+}
+.dark-nav{
+    background: rgba(34, 59, 122,0.9);
+    transition: 0.5s;
+}
+.botonFlotante {
+    position: fixed !important;
+    top: 80% !important;
+    transform: translateY(-50%) !important;
+    right: 0 !important;
+    background: #1b772a !important;
+    color: #fff !important;
+    font-size: 4rem !important;
+    width: 80px;
+    height: 80px; 
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    padding: 0; 
+    z-index: 9999;
+}
+
+.botonUp.dark-botonUp {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    color: #333;
+}
+.botonUp {
+    display: none; 
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #223B7A !important;
+    font-size: 2.2rem !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+    z-index: 9999;
+}
+.botonDown.dark-botonDown {
+    display: none;
+}
+.botonDown {
+    display: flex; 
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 50% !important;
+    left: 50% !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #223B7A !important;
+    font-size: 2.2rem !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+    z-index: 9999;
+}
+.menu-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.engBtn {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.engBtn:hover, .engBtn:active {
+    
+    color: rgba(122, 152, 201, 1);
+}
+.menu-icon{
+    display: none;
+}
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-icon {
+    width: 16px; 
+    height: 16px;
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.submenu {
+    position: absolute;
+    border-radius: 16px;
+    top: 100%;
+    left: 0;
+    background: rgba(1, 21, 45, 0.8);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.submenu li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu li:hover {
+    background: rgba(41, 1, 45, 0.2);
+}
+@media(max-width:1213px){
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+
+}
+@media(max-width:1100px){
+    .logo{
+        width: 120px;
+    }
+}
+@media(max-width:1090px){
+    .logo{
+        width: 110px;
+    }
+}
+@media(max-width:1070px){
+    .logo{
+        width: 105px;
+    }
+}
+@media(max-width:1035px){
+    .logo{
+        width: 100px;
+    }
+}
+@media(max-width:1022px){
+    .logo{
+        width: 95px;
+    }
+}
+@media(max-width:1010px){
+    nav ul li{
+        font-size: 19px;
+    }
+}
+@media(max-width:988px){
+    nav ul li{
+        font-size: 18.5px;
+    }
+}
+@media(max-width:976px){
+    nav ul li{
+        font-size: 18.2px;
+    }
+}
+@media(max-width:972px){
+    nav ul li{
+        font-size: 18.1px;
+    }
+}
+@media(max-width:970px){
+    nav ul li{
+        font-size: 18px;
+    }
+}
+@media(max-width:966.5px){
+    .logo{
+        width: 90px;
+    }
+}
+@media(max-width:957px){
+    
+    nav ul li{
+        font-size: 17px;
+    }
+}
+@media(max-width:965px){
+    .logo{
+        width: 80px;
+    }
+}
+@media(max-width:935px){
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+    .panel-container {
+        width: 80%; /* Antes quizá era automático, ahora ocupa más espacio */
+        justify-content: flex-end; /* Empuja el contenido hacia el engBtn */
+        gap: 10px;
+    }
+
+    .menu-container {
+        width: 100%; /* Para que el mobile menu se acerque al engBtn */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .submenu {
+        position: static;
+        border-radius: 16px;
+        top: 30vh; /* No change, already percentage-based */
+        bottom: auto; /* Removed 'bottom' to avoid conflict with 'top' */
+        right: 60px !important;
+        left: auto;
+        background: rgba(41, 1, 45, 0.7);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 190px;
+        height: 15vh; /* Adjust height proportionally */
+    }
+    
+    .submenu li {
+        padding: 10px;
+        white-space: nowrap;
+    }
+    
+    .submenu.show {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block; /* Asegura que se muestre */
+        width: 40px; /* Ajusta el tamaño */
+        cursor: pointer;
+    }
+
+    menu-container {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: flex-end; /* Push items to the right */
+        gap: 10px;
+        margin-left: auto; /* Push container to the right */
+    }
+    
+
+    nav{
+        padding: 15px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;  
+    }
+    
+}

@@ -1,0 +1,35 @@
+.AboutPadd-15 { padding-left:15px; padding-right:15px; color:#223b7a;}
+.containerAbout { max-width:1100px; width:100%; margin:auto; }
+.sectionAbout .containerAbout { padding-top:60px; padding-bottom:70px; }
+.sectionAbout-title { flex:0 0 100%; max-width:100%; margin-bottom:60px; text-align:center; }
+.about .about-content { flex:0 0 100%; max-width:100%; }
+.rowAbout { display:flex; flex-wrap:wrap; margin-left:-15px; margin-right:-15px; position:relative; }
+
+.about-text h3 { font-size:24px; margin-bottom:15px; font-weight:700; color:#525252; }
+.about-text h3 span { color:#4B66A8; }
+.about-text p { font-size:16px; line-height:25px; color:#525252; }
+
+.mission-vision { margin-top:30px; width:100%; display:flex; flex-wrap:wrap; }
+.mission, .vision { flex:0 0 50%; max-width:50%; padding:15px; }
+.mission h4, .vision h4 { font-size:20px; font-weight:700; color:#4B66A8; margin-bottom:10px; }
+.mission p, .vision p { font-size:16px; line-height:25px; color:#525252; }
+
+.video-section { flex:0 0 100%; max-width:100%; margin-top:30px; }
+.video-section h4 { font-size:20px; font-weight:700; margin-bottom:15px; color:#4B66A8; }
+.video-container { width:100%; border-radius:10px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+
+.skills { flex:0 0 100%; max-width:100%; margin-top:30px; }
+.skills h4 { font-size:20px; font-weight:700; color:#4B66A8; margin-bottom:15px; }
+.skill-item { flex:0 0 100%; max-width:100%; margin-bottom:25px; }
+.skill-item h5 { line-height:40px; font-weight:600; font-size:16px; color:#525252; }
+.skill-item .progress { background-color:#aaaaaa; height:7px; border-radius:4px; width:100%; position:relative; }
+.skill-item .progress .progress-in { position:absolute; left:0; top:0; height:100%; border-radius:4px; background-color:#4B66A8; transition:width 1.5s ease-in-out; }
+.skill-item .skill-percent { position:absolute; right:0; color:#525252; top:-40px; font-weight:400; line-height:40px; }
+
+/* Responsive */
+@media(max-width:767px){
+  .mission, .vision, .skills { flex:0 0 100%; max-width:100%; }
+  .about-text h3 { font-size:20px; }
+  .about-text p, .mission p, .vision p { font-size:15px; line-height:22px; }
+  .video-container iframe { height:250px; }
+}

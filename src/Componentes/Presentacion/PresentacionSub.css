@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Parisienne&display=swap');
+.presentacion {
+    width: 100% !important;
+    height: 100vh !important;
+    box-sizing: border-box !important;
+    background-image: radial-gradient(
+        at right center,
+        hsla(202, 94%, 14%, 0.74),
+        hsla(213, 60%, 6%, 0.973),
+        hsla(0, 0%, 0%, 0.932)
+    ),
+    radial-gradient(
+        at right center,
+        hsla(236, 80%, 8%, 0.8),
+        transparent,
+        hsla(216, 45%, 6%, 0.7)
+    ),
+    url('../../assets/presentacion1.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    padding: 2rem !important;
+    padding-left: 10vh !important;
+}
+
+.presentacion .container {
+    margin-left: 10vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    max-width: 1200px !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Escalado progresivo si la altura es muy baja */
+@media (max-height: 850px) {
+    .presentacion .container {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-height: 700px) {
+    .presentacion .container {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-height: 600px) {
+    .presentacion .container {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-height: 500px) {
+    .presentacion .container {
+        transform: scale(0.65);
+    }
+}
+
+
+
+
+
+.presentacion-texto {
+    display: flex !important;
+    flex-direction: column !important;
+    
+}
+
+.saludo {
+    font-size: 18px !important;
+    color: #00c9c3 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.slogan {
+    font-family: 'ubuntu-sans', sans-serif !important;
+    font-size: clamp(1.3rem, 1.5rem + 3.3vw, 4rem) !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.descripcion {
+    font-size: 1.2rem !important;
+    color: #bbbbbb !important;
+    padding-bottom: 2rem !important;
+}
+
+.presentacion-img {
+    position: relative !important;
+}
+
+.border {
+    width: min(36rem, 40vw) !important;
+    height: min( 75vh) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    box-sizing: border-box !important;
+}
+
+.img-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+}
+
+.img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease-in-out !important;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.06) !important;
+}
+
+/*--------media queries------------*/
+@media(max-width:1500px){
+    .presentacion-img {
+        margin-left: 13rem !important;
+    }
+}
+@media(max-width:1300px){
+    .presentacion-img {
+        margin-left: 7.5rem !important;
+    }
+    .border {
+        width: 27rem !important;
+        height: 36rem !important;
+    }
+}
+@media(max-width:1000px){
+    .presentacion-img {
+        margin-left: 2rem !important;
+    }
+    .border {
+        width: 24rem !important;
+        height: 32rem !important;
+    }
+}
+@media(max-width:900px){
+    .presentacion-img {
+        margin-left: 1.5rem !important;
+    }
+    .border {
+        width: 18rem !important;
+        height: 24rem;
+    }
+}
+
+@media(max-width:800px){
+    .presentacion-img {
+        margin-left: 1.2rem !important;
+    }
+    .border {
+        width: 12rem !important;
+        height: 16rem !important;
+    }
+}
+@media(max-width:620px){
+    .border {
+        display: none !important;
+    }
+}
+@media(max-width:400px){
+    .saludo{
+        font-size: 14px !important;
+    }
+    .descripcion {
+        font-size: 1rem !important;
+    }
+    .presentacion-texto {
+        padding-right: 23px !important;
+        padding-left: 23px !important;
+    }
+}
+@media(max-height:420px){
+    .saludo {
+        font-size: 0px !important;
+        color: #beac06 !important;
+        margin-bottom: 0 !important;
+        display: none !important;
+    }
+    .slogan {
+        padding-bottom: 1rem !important;
+    }
+    .descripcion {
+        font-size: 1rem !important;
+    }
+    .presentacion{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .border{
+        width: 12rem !important;
+        height: 16rem !important;
+    }
+}
