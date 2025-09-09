@@ -1,13 +1,13 @@
 .presentacion {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;   /* 100% del viewport real */
+  min-height: 100vh; /* 100% de alto del viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
 }
 
 .carousel-background {

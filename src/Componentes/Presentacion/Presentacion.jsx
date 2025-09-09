@@ -21,18 +21,17 @@ const Presentacion = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Cambiar descripción aleatoriamente
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentDescription(prev => {
         const descCount = translations[language]?.descriptions.length || 1;
         let next = Math.floor(Math.random() * descCount);
         while (next === prev) {
-          next = Math.floor(Math.random() * descCount); // evitar repetir la misma
+          next = Math.floor(Math.random() * descCount);
         }
         return next;
       });
-    }, 4000); // cada 4 segundos cambia la frase
+    }, 4000);
     return () => clearInterval(interval);
   }, [language]);
 
