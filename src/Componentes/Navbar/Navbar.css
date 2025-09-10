@@ -297,13 +297,32 @@ nav ul li.active {
         cursor: pointer;
     }
     .panel-container {
-        width: 80%; /* Antes quizá era automático, ahora ocupa más espacio */
-        justify-content: flex-end; /* Empuja el contenido hacia el engBtn */
+        width: 80%;
+        justify-content: flex-end;
         gap: 10px;
     }
+    .contactoBtn .btn {
+        clip-path: none !important; 
+        font-size: 20px !important;
+        padding: 10px 20px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #fff !important; 
+        border-radius: 30px !important;
+        background: transparent !important; 
+        cursor: pointer !important;
+        border: 2px solid #4B66A8 !important;
+        outline: none !important;
+        transition: all 0.3s ease-in-out !important;
+    }
 
+    .contactoBtn .btn:hover {
+        background: #4B66A8 !important;
+        color: #fff !important;
+    }
     .menu-container {
-        width: 100%; /* Para que el mobile menu se acerque al engBtn */
+        width: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -311,8 +330,8 @@ nav ul li.active {
     .submenu {
         position: static;
         border-radius: 16px;
-        top: 30vh; /* No change, already percentage-based */
-        bottom: auto; /* Removed 'bottom' to avoid conflict with 'top' */
+        top: 30vh;
+        bottom: auto;
         right: 60px !important;
         left: auto;
         background: rgba(1, 21, 45, 0.8);

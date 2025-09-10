@@ -19,7 +19,7 @@ const clientesData = {
     { img: FotoCli4, name: "Música", slogan: "Expresa tu creatividad y emociones a través del arte musical." },
     { img: FotoCli5, name: "Orquesta", slogan: "Vive la experiencia de hacer música en conjunto y en armonía." },
     { img: FotoCli6, name: "Taekwondo", slogan: "Fortalece cuerpo y mente con valores de disciplina y perseverancia." },
-    { img: FotoCli7, name: "Danza Moderna", slogan: "Movimiento, ritmo y expresión para liberar tu energía." }
+    { img: FotoCli7, name: "Danza Hawaiana", slogan: "Movimiento, ritmo y expresión para liberar tu energía." }
   ],
   en: [
     { img: FotoCli1, name: "Judo", slogan: "Discipline, strength, and respect in every move." },
@@ -28,7 +28,7 @@ const clientesData = {
     { img: FotoCli4, name: "Music", slogan: "Express your creativity and emotions through musical art." },
     { img: FotoCli5, name: "Orchestra", slogan: "Experience the harmony of playing music together." },
     { img: FotoCli6, name: "Taekwondo", slogan: "Strengthen body and mind with discipline and perseverance." },
-    { img: FotoCli7, name: "Modern Dance", slogan: "Movement, rhythm, and expression to unleash your energy." }
+    { img: FotoCli7, name: "Hawaian Dance", slogan: "Movement, rhythm, and expression to unleash your energy." }
   ],
   fr: [
     { img: FotoCli1, name: "Judo", slogan: "Discipline, force et respect dans chaque mouvement." },
@@ -37,7 +37,7 @@ const clientesData = {
     { img: FotoCli4, name: "Musique", slogan: "Exprime ta créativité et tes émotions à travers l'art musical." },
     { img: FotoCli5, name: "Orchestre", slogan: "Vis l'expérience de faire de la musique en harmonie." },
     { img: FotoCli6, name: "Taekwondo", slogan: "Renforce ton corps et ton esprit avec discipline et persévérance." },
-    { img: FotoCli7, name: "Danse Moderne", slogan: "Mouvement, rythme et expression pour libérer ton énergie." }
+    { img: FotoCli7, name: "Danse Hawaian", slogan: "Mouvement, rythme et expression pour libérer ton énergie." }
   ]
 };
 

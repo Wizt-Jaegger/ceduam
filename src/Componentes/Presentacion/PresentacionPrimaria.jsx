@@ -17,7 +17,7 @@ const PresentacionPrimaria = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage(prev => (prev + 1) % imageArray.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 

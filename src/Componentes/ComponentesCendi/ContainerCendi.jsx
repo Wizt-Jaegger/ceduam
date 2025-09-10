@@ -33,7 +33,7 @@ const ContainerApp = () => {
                     titulo={language === "es" ? "Formación integral dentro y fuera del aula" : language === "en" ? "Comprehensive learning inside and outside the classroom" : language === "de" ? "Ganzheitliches Lernen innerhalb und außerhalb des Klassenzimmers" : "Un apprentissage complet à l'intérieur et à l'extérieur de la classe"}
                 />
             </div>
-            <Portafolio />
+            <Portafolio tag="cendi" />
             <Maps/>
             <Footer />
         </div>

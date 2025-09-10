@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Presentacion.css';
 import logo from '../../assets/habilidad-4.png';
-import primaria1 from '../../assets/presentacion-primaria-1.png';
-import primaria2 from '../../assets/presentacion2.png';
-import primaria3 from '../../assets/presentacion3.png';
-import primaria4 from '../../assets/presentacion4.png';
+import secundaria1 from '../../assets/presentacion-secundaria-1.png';
+import secundaria2 from '../../assets/presentacion-secundaria-2.png';
+import secundaria3 from '../../assets/presentacion-secundaria-3.png';
+import secundaria4 from '../../assets/presentacion-secundaria-4.png';
+
 import { useLanguage } from "../../LanguageContext";
 
-const imageArray = [primaria1, primaria2, primaria3, primaria4];
+const imageArray = [secundaria1, secundaria2, secundaria3, secundaria4];
 
 const PresentacionSecundaria = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -17,17 +18,18 @@ const PresentacionSecundaria = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage(prev => (prev + 1) % imageArray.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
+  // Cambia descripción cada 4s
   useEffect(() => {
     const interval = setInterval(() => {
+      const descCount = translations[language]?.descriptions.length || 1;
       setCurrentDescription(prev => {
-        const descCount = translations[language]?.descriptions.length || 1;
         let next = Math.floor(Math.random() * descCount);
         while (next === prev) {
-          next = Math.floor(Math.random() * descCount); 
+          next = Math.floor(Math.random() * descCount);
         }
         return next;
       });
@@ -37,27 +39,27 @@ const PresentacionSecundaria = () => {
 
   const translations = {
     es: {
-      nameSchool: "Primaria",
+      nameSchool: "Secundaria",
       descriptions: [
-        "Formación bilingüe en español e inglés con francés desde 4° grado.",
-        "Certificaciones internacionales que fortalecen el aprendizaje.",
-        "Cada día es una oportunidad para crecer, descubrir y soñar."
+        "Preparación integral para los retos académicos y personales.",
+        "Fomento del pensamiento crítico, creatividad y liderazgo.",
+        "Proyectos, deportes y actividades culturales que fortalecen habilidades."
       ]
     },
     en: {
-      nameSchool: "Elementary School",
+      nameSchool: "Middle School",
       descriptions: [
-        "Bilingual education in Spanish and English, with French starting in 4th grade.",
-        "International certifications to strengthen learning.",
-        "Every day is a new opportunity to grow, discover, and dream."
+        "Comprehensive preparation for academic and personal challenges.",
+        "Encouraging critical thinking, creativity, and leadership.",
+        "Projects, sports, and cultural activities that strengthen skills."
       ]
     },
     fr: {
-      nameSchool: "École Primaire",
+      nameSchool: "Collège",
       descriptions: [
-        "Éducation bilingue en espagnol et en anglais, avec le français dès la 4e année.",
-        "Certifications internationales qui renforcent l'apprentissage.",
-        "Chaque jour est une opportunité de grandir, découvrir et rêver."
+        "Préparation complète aux défis académiques et personnels.",
+        "Encouragement à la pensée critique, créativité et leadership.",
+        "Projets, sports et activités culturelles qui renforcent les compétences."
       ]
     }
   };

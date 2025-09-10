@@ -1,6 +1,6 @@
 import React, { use, useState } from "react"; 
 import NavbarWebApp from "../Navbar/NavbarSecundario";
-import PresentacionWebApp from "../Presentacion/PresentacionPrimaria";
+import PresentacionWebApp from "../Presentacion/PresentacionSecundaria";
 import Footer from "../Footer/Footer";
 import { useLanguage } from "../../LanguageContext";
 import Banner from "../Banner/Banner";
@@ -34,7 +34,7 @@ const ContainerApp = () => {
                     titulo={language === "es" ? "Formación integral dentro y fuera del aula" : language === "en" ? "Comprehensive learning inside and outside the classroom" : language === "de" ? "Ganzheitliches Lernen innerhalb und außerhalb des Klassenzimmers" : "Un apprentissage complet à l'intérieur et à l'extérieur de la classe"}
                 />
             </div>
-            <Portafolio />
+            <Portafolio tag="secundaria" />
             <Maps/>
             <Footer />
         </div>
