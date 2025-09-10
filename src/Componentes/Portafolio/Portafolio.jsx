@@ -12,7 +12,7 @@ import portfolio8 from "../../assets/portfolio-8.jpg";
 // placeholders para nuevas imágenes (puedes reemplazar)
 import portfolio9 from "../../assets/portfolio-9.jpg";
 import portfolio10 from "../../assets/portfolio-10.jpg";
-import portfolio11 from "../../assets/portfolio-8.jpg";
+import portfolio11 from "../../assets/portfolio-11.jpg";
 import portfolio12 from "../../assets/portfolio-12.jpg";
 import portfolio13 from "../../assets/portfolio-13.jpg";
 import portfolio14 from "../../assets/portfolio-8.jpg";
@@ -134,35 +134,35 @@ const Portafolio = ({ tag }) => {
 
   const tr = (key) => translations[key]?.[lang] || translations[key]?.es || "";
 
-  // 20 actividades balanceadas
+  // 20 actividades balanceadas con links reales o funcionales
   const portfolioItems = [
     // Cendi (5)
-    { href: "https://example.com/juegos", src: portfolio7, tag: "cendi", key: "juegos" },
-    { href: "https://example.com/psicomotricidad", src: portfolio11, tag: "cendi", key: "psicomotricidad" },
-    { href: "https://example.com/musica", src: portfolio12, tag: "cendi", key: "musica" },
-    { href: "https://example.com/montessori", src: portfolio9, tag: "cendi", key: "montessori" },
-    { href: "https://example.com/roles", src: portfolio10, tag: "cendi", key: "roles" },
+    { href: "https://revistasdigitales.uniboyaca.edu.co/index.php/EFQ/article/download/1207/865/9389", src: portfolio7, tag: "cendi", key: "juegos" },
+    { href: "https://fontenebroschool.com/la-importancia-de-trabajar-la-motricidad-fina-en-edades-tempranas", src: portfolio11, tag: "cendi", key: "psicomotricidad" },
+    { href: "https://www.classicsforkids.com/music/", src: portfolio12, tag: "cendi", key: "musica" },
+    { href: "https://montessori-market.com/sensorial", src: portfolio9, tag: "cendi", key: "montessori" },
+    { href: "https://uees.edu.ec/la-importancia-del-juego-para-mejorar-el-desarrollo-de-nuestros-ninos", src: portfolio10, tag: "cendi", key: "roles" },
 
     // Preescolar (5)
-    { href: "https://example.com/juegos", src: portfolio7, tag: "preescolar", key: "juegos" },
-    { href: "https://example.com/montessori", src: portfolio9, tag: "preescolar", key: "montessori" },
-    { href: "https://example.com/roles", src: portfolio10, tag: "preescolar", key: "roles" },
-    { href: "https://example.com/musica", src: portfolio12, tag: "preescolar", key: "musica" },
-    { href: "https://example.com/arte", src: portfolio16, tag: "preescolar", key: "arte" },
+    { href: "https://revistasdigitales.uniboyaca.edu.co/index.php/EFQ/article/download/1207/865/9389", src: portfolio7, tag: "preescolar", key: "juegos" },
+    { href: "https://montessori-market.com/sensorial", src: portfolio9, tag: "preescolar", key: "montessori" },
+    { href: "https://uees.edu.ec/la-importancia-del-juego-para-mejorar-el-desarrollo-de-nuestros-ninos", src: portfolio10, tag: "preescolar", key: "roles" },
+    { href: "https://www.colegioceumurcia.es/blog/los-beneficios-de-la-musica-en-el-desarrollo-cognitivo-creativo-intelectual-y-psicologico-del-alumnado", src: portfolio12, tag: "preescolar", key: "musica" },
+    { href: "https://www.gob.mx/sipinna/articulos/el-arte-es-un-recurso-esencial-para-el-desarrollo-de-ninas-ninos-y-adolescentes", src: portfolio16, tag: "preescolar", key: "arte" },
 
     // Primaria (5)
-    { href: "https://example.com/mun", src: portfolio1, tag: "primaria", key: "mun" },
-    { href: "https://example.com/spelling", src: portfolio2, tag: "primaria", key: "spelling" },
-    { href: "https://example.com/excursion", src: portfolio4, tag: "primaria", key: "excursiones" },
-    { href: "https://example.com/eventos", src: portfolio5, tag: "primaria", key: "eventos" },
-    { href: "https://example.com/cooperativo", src: portfolio13, tag: "primaria", key: "cooperativo" },
+    { href: "https://www.un.org/es/mun", src: portfolio1, tag: "primaria", key: "mun" },
+    { href: "https://spellingbee.com", src: portfolio2, tag: "primaria", key: "spelling" },
+    { href: "https://www.colegiosanjorge.es/beneficios-aprendizaje-excursiones-escolares", src: portfolio4, tag: "primaria", key: "excursiones" },
+    { href: "https://innovaschools.edu.mx/blog/importancia-eventos-escolares-escuela-primaria/", src: portfolio5, tag: "primaria", key: "eventos" },
+    { href: "https://www3.gobiernodecanarias.org/medusa/ecoescuela/pedagotic/aprendizaje-cooperativo", src: portfolio13, tag: "primaria", key: "cooperativo" },
 
     // Secundaria (5)
-    { href: "https://example.com/mun", src: portfolio1, tag: "secundaria", key: "mun" },
-    { href: "https://example.com/spelling", src: portfolio2, tag: "secundaria", key: "spelling" },
-    { href: "https://example.com/camp", src: portfolio3, tag: "secundaria", key: "camp" },
-    { href: "https://example.com/diversidad", src: portfolio6, tag: "secundaria", key: "diversidad" },
-    { href: "https://example.com/stem", src: portfolio17, tag: "secundaria", key: "stem" },
+    { href: "https://www.un.org/es/mun", src: portfolio1, tag: "secundaria", key: "mun" },
+    { href: "https://spellingbee.com", src: portfolio2, tag: "secundaria", key: "spelling" },
+    { href: "https://www.facebook.com/IguazuMorelos", src: portfolio3, tag: "secundaria", key: "camp" },
+    { href: "https://identidadydesarrollo.com/importancia-de-la-diversidad-cultural", src: portfolio6, tag: "secundaria", key: "diversidad" },
+    { href: "https://www.stem.org.uk/resources", src: portfolio17, tag: "secundaria", key: "stem" },
   ];
 
   const filteredItems = tag ? portfolioItems.filter((i) => i.tag === tag) : portfolioItems;
